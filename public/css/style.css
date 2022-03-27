@@ -12,19 +12,19 @@ table {
     text-align: center;
 }
 
-.ticket-actual {
+.ticket-now {
     background-color: #282828;
 }
 
-.ticket-actual-numero {
+.ticket-now-number {
     font-size: 80px;
 }
 
-.ticket-actual-escritorio {
+.ticket-now-desktop {
     font-size: 45px;
 }
 
-.ticket-secundario {
+.ticket-secondary {
     font-size: 25px;
 }
 

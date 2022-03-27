@@ -1,26 +1,21 @@
+const TicketControl = require("../models/ticket-control");
 
-
+const ticketControl = new TicketControl
 
 const socketController = (socket) => {
+
+    socket.emit( 'view-last-ticket', ticketControl.lastTicket);
     
-    console.log('Cliente conectado', socket.id );
-
-    socket.on('disconnect', () => {
-        console.log('Cliente desconectado', socket.id );
-    });
-
-    socket.on('enviar-mensaje', ( payload, callback ) => {
+    // Event of the client
+    socket.on('next-ticket', ( payload, callback ) => {
         
-        const id = 123456789;
-        callback( id );
+        const next = ticketControl.next()
+        callback(next)
 
-        socket.broadcast.emit('enviar-mensaje', payload );
-
+        // TODO: Notify here we have a new ticket
     })
 
 }
-
-
 
 module.exports = {
     socketController
