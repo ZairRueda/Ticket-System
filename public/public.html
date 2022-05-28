@@ -12,36 +12,42 @@
 
 </head>
 
-<body>
+<body class="body-blue">
+
+    <nav class="nav-menu nav-fixed">
+        <a href="./index.html" class="nav-link" data-toggle="collapse">Home</a>
+        <a href="./public.html" class="nav-link" data-toggle="collapse">Public</a>
+        <a href="./new-ticket.html" class="nav-link" data-toggle="collapse">New Ticket</a>
+    </nav>
 
     <table>
         <tr>
             <td valign="middle" class="ticket-now">
-                <span id="lblTicket1" class="ticket-now-number">Ticket W</span>
+                <span id="lblTicket1" class="ticket-now-number"></span>
                 <br>
-                <span id="lblDesktop1" class="ticket-now-desktop">Desktop W</span>
+                <span id="lblDesktop1" class="ticket-now-desktop"></span>
             </td>
             <td>
                 <table>
                     <tr>
                         <td>
-                            <span id="lblTicket2" class="ticket-secondary">Ticket X</span>
+                            <span id="lblTicket2" class="ticket-secondary"></span>
                             <br>
-                            <span id="lblDesktop2">Desktop X</span>
+                            <span id="lblDesktop2"></span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span id="lblTicket3" class="ticket-secondary">Ticket Y</span>
+                            <span id="lblTicket3" class="ticket-secondary"></span>
                             <br>
-                            <span id="lblDesktop3">Desktop Y</span>
+                            <span id="lblDesktop3"></span>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span id="lblTicket4" class="ticket-secondary">Ticket Z</span>
+                            <span id="lblTicket4" class="ticket-secondary"></span>
                             <br>
-                            <span id="lblDesktop4">Desktop Z</span>
+                            <span id="lblDesktop4"></span>
                         </td>
                     </tr>
                 </table>
@@ -49,7 +55,7 @@
         </tr>
     </table>
 
-
+    <script src="./socket.io/socket.io.js"></script>
     <script src="./js/public.js"></script>
 
 </body>

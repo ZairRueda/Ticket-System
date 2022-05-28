@@ -8,31 +8,42 @@
     <title>Queues program</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
-    <h1 class="mt-5">Desktop</h1>
-    <hr>
-    <div class="row">
-        <div class="col-8">
-            <h4>Responding to <small class="text-primary">....</small></h4>
-        
-            <button class="btn btn-primary mt-5">
-                Respond next ticket
-            </button>
-        </div>
+<body class="">
 
-        <div class="col-4 text-center">
-            <h4>In queue</h4>
+    <nav class="nav-menu nav-fixed">
+        <a href="./index.html" class="nav-link" data-toggle="collapse">Home</a>
+        <a href="./public.html" class="nav-link" data-toggle="collapse">Public</a>
+        <a href="./new-ticket.html" class="nav-link" data-toggle="collapse">New Ticket</a>
+    </nav>
+
+    <main class="container">
+        <h1 id="desktop-name" class="mt-5">Desktop</h1>
+        <hr>
+        <div class="row">
+            <div class="col-8">
+                <h4>Responding to <small class="text-primary">....</small></h4>
             
-            <div class="alert alert-info mt-2">
-                <span>There have no more tickets</span>
+                <button class="btn btn-primary mt-5">
+                    Respond next ticket
+                </button>
             </div>
 
-            <h1 id="lblWaiting">10</h1>
-        </div>
-    </div>
+            <div class="col-4 text-center">
+                <h4>In queue</h4>
+                
+                <div class="alert alert-info mt-2">
+                    <span>There have no more tickets</span>
+                </div>
 
+                <h1 id="lblWaiting"></h1>
+            </div>
+        </div>
+    </main>
+
+    <script src="./socket.io/socket.io.js"></script>
     <script src="./js/desktop.js"></script>
 
 </body>

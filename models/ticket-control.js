@@ -75,7 +75,7 @@ class TicketControl {
 
   serveTicket(desktop) {
     // If we don't have a ticket
-    if (this.Tickets.length === 0 ) {
+    if (this.tickets.length === 0 ) {
       return null
     }
 
